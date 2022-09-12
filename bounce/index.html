@@ -4,27 +4,12 @@
     <meta charset="utf-8" />
     <title>Bounce</title>
     <link rel="stylesheet" href="design/style.css" />
-    <script type="module" src="source/Main.js"></script>
     <script type='text/javascript' src='/../utils/gamecontroller.js'></script>
-    <script type='text/javascript'>
-        $( function() { // jQuery *not* required - just be to call onload
-            GameController.init( {
-                left: {
-                    position: { left: '50%', bottom: '5%' },
-                    dpad: {
-                        up: false,
-                        down: false,
-                        left: { width: '50%', height: '10%' },
-                        right: { width: '50%', height: '10%' }
-                    }
-                },
-                right: false
-            } );
-        } );
-    </script>    
+    <script type="module" src="source/Main.js"></script>
 </head>
 
 <body>
+    <canvas></canvas>
     <div id="container" class="mainScreen">
         <div class="count">0</div>
         <div class="bricks"></div>
@@ -95,5 +80,10 @@
             </div>
         </div>
     </div>
+    <script type='text/javascript'>
+        $( function() { // jQuery *not* required - just be to call onload
+            GameController.init();
+        } );
+    </script>
 </body>
 </html>
