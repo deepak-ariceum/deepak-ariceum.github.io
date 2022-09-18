@@ -1,8 +1,9 @@
-# HTML5 Games
+# Snake
 
-A collection of old style addictive games writen in JavaScript, HTML and CSS.
+A mobile optimised take on Snake
 
+This is a small game of Snake, but with a twist. It's optimised for usage on mobile devices, detecting the device orientation and using that to control the movement of the Snake.
 
-## Play
+Rather than being limited to just four directions of travel, this version of the popular game has a full 360 degree rotation.
 
-Go [play](http://tommalbran.github.io/games/) and have fun :)
+Keyboard controls are also supported (Left/Right A/D), but openning this on either a tablet or a phone is far more fun!
